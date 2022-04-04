@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="tabc" constructor="ButtonControl" version="7.3.0" display-name-key="ButtonControl" description-key="PCF control to represent a button action in model driven apps." control-type="standard" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+      <property name="BoundToField" display-name-key="Button Field" description-key="Text field to render as a button" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property name="ButtonText" display-name-key="Text" description-key="Customize the text value of the button" of-type="SingleLine.Text" usage="input" default-value="Request Approval" required="true" />
+      <property name="Color" display-name-key="Color" description-key="Font color of the text inside the button" of-type="SingleLine.Text" usage="input" default-value="#000000" required="true" />
+      <property name="BackgroundColor" display-name-key="Background Color" description-key="Background color of the button" of-type="SingleLine.Text" usage="input" default-value="#efefef" required="true" />
+      <property name="BorderRadius" display-name-key="Border Radius" description-key="(Optional) Border radius for the button" of-type="SingleLine.Text" usage="input" default-value="3px" required="false" />
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>
